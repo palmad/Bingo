@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bingo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bingo.css">
+    </head>
+    <body onload="init()">
+        <div id="bingo-content">
+            <div class="sambayo">
+                      <p><b>CARTILLA DE BINGO</b></p>
+              </div>
+            <br>
+            <table id="bingo-card">
+                <tr>
+                    <th class="header">B</th>
+                    <th class="header">I</th>
+                    <th class="header">N</th>
+                    <th class="header">G</th>
+                    <th class="header">O</th>
+                </tr>
+                <tr id = "tb1">
+                    <script>
+                        let t1 = document.getElementById("tb1")
+                    for (var i = 0; i < 5; i++) {
+                        t1.innerHTML += `<td><input id="sq${i}" class="square" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>     
+                </tr>
+                <tr id = "tb2">
+                    <script>
+                        let t2 = document.getElementById("tb2")
+                    for (var i = 5; i < 10; i++) {
+                        t2.innerHTML += `<td><input id="sq${i}" class="square" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>     
+                </tr>
+                <tr id = "tb3"> 
+                    <script>
+                        let t3 = document.getElementById("tb3")
+                    for (var i = 10; i < 15; i++) {
+                        t3.innerHTML += `<td><input id="sq${i}" class="square" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>     
+                </tr>
+                <tr id = "tb4">
+                    <script>
+                        let t4 = document.getElementById("tb4")
+                    for (var i = 15; i < 20; i++) {
+                        t4.innerHTML += `<td><input id="sq${i}" class="square" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>   
+                </tr>
+                <tr id = "tb5">
+                    <script>
+                        let t5 = document.getElementById("tb5")
+                    for (var i = 20; i < 25; i++) {
+                        t5.innerHTML += `<td><input id="sq${i}" class="square" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>   
+                </tr>
+                 <tr id = "tb6">
+                    <script>
+                        let t6 = document.getElementById("tb6")
+                    for (var i = 25; i < 30; i++) {
+                        t6.innerHTML += `<td><input id="sq${i}" class="square" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>   
+                </tr>
+                <tr id = "tb7">
+                    <script>
+                        let t7 = document.getElementById("tb7")
+                    for (var i = 30; i < 35; i++) {
+                        t7.innerHTML += `<td><input id="sq${i}" class="square" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>   
+                </tr>
+                <tr id = "tb8">
+                    <script>
+                        let t8 = document.getElementById("tb8")
+                    for (var i = 35; i < 40; i++) {
+                        t8.innerHTML += `<td><input id="sq${i}" class="square" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>   
+                </tr>
+                <tr id = "tb9">
+                    <script>
+                        let t9 = document.getElementById("tb9")
+                    for (var i = 40; i < 45; i++) {
+                        t9.innerHTML += `<td><input id="sq${i}" class="square" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>   
+                </tr>
+                <tr id = "tb10">
+                    <script>
+                        let t10 = document.getElementById("tb10")
+                    for (var i = 45; i < 50; i++) {
+                        t10.innerHTML += `<td><input id="sq${i}" class="square1" type="button" value="&nbsp;" onclick="markSquare(c${i})"></td>`;
+                    }
+                    </script>   
+                </tr>
+            </table>
+        </div>
+        <p><a href="#" onclick="NewBingoCard()">Click aqui</a>, Nuevo Carton</p>
+    </body>
+    <script src="script.js"></script>
+</html>
